@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity2"
+    android:background="#000000"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/img2"
+                    android:src="@drawable/a1"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Nutrition"
+                    android:id="@+id/button1"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/button2"
+                    android:text="Schedule your cook time"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
